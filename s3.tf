@@ -1,6 +1,6 @@
 
 module "utlis_func" {
-    source = ".//modules/utlis_func"
+  source = ".//modules/utlis_func"
 }
 
 resource "aws_s3_bucket" "aws_s3_bucket" {
@@ -8,6 +8,6 @@ resource "aws_s3_bucket" "aws_s3_bucket" {
 
   tags = {
     Name        = var.tags["name"]
-    Environment = var.tags["environment"] 
+    Environment = var.tags["environment"]
   }
 }
