@@ -1,6 +1,7 @@
 resource "random_string" "random" {
-  length           = 16
+  length           = 6
   special          = false
+  min_upper = 0
 }
 
 output "random_string" {
